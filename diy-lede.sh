@@ -8,7 +8,7 @@ rm -rf package/lean/luci-theme-argon  #删除源码自带的argon主题，因为
 #
 
 # 修改openwrt登陆地址,把下面的192.168.2.2修改成你想要的就可以了，其他的不要动
-sed -i 's/192.168.1.1/192.168.2.2/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.1.1/192.168.1.15/g' package/base-files/files/bin/config_generate
 
 
 sed -i 's@.*CYXluq4wUazHjmCDBCqXF*@#&@g' package/lean/default-settings/files/zzz-default-settings  #设置密码为空（安装固件时无需密码登陆，然后自己修改想要的密码）
